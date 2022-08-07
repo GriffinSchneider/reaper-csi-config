@@ -1,0 +1,8 @@
+Zone "SelectedChannel"
+  SelectedTrackNavigator
+  Read                     TrackAutoMode  "1"
+  Write                    TrackAutoMode  "3"
+  Trim                     TrackAutoMode  "0"
+  Touch                    TrackAutoMode  "2"
+  Latch                    TrackAutoMode  "4"
+ZoneEnd

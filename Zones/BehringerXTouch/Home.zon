@@ -1,0 +1,144 @@
+Zone Home
+  / OnTrackSelection         MapSelectedTrackSendsToWidgets
+  / OnTrackSelection         MapSelectedTrackFXToMenu
+  OnFXFocus MapFocusedFXToWidgets 
+
+  / Zone Buttons
+  Shift                    Shift
+  Option                   Option
+  Control                  Control
+  Alt                      Alt
+  
+  smpteBeats               CycleTimeDisplayModes
+  TimeDisplay              TimeDisplay
+  
+  Track                    NoAction
+  Pan                      NoAction
+  EQ                       Reaper    _S&M_TOGLFXCHAIN         // SWS/S&M: Toggle show FX chain windows for selected tracks
+  Send                     MapSelectedTrackSendsToWidgets
+  / Plugin                   MapSelectedTrackFXToMenu
+  Plugin                   Reaper _S&M_WNTSHW3 // SWS/S&M: Show all floating FX windows for selected tracks
+
+     GlobalView                     GoZone Home
+  GlobalView Reaper _S&M_WNCLS3 // SWS/S&M: Close all floating FX windows
+  GlobalView Reaper _S&M_WNCLS4// SWS/S&M: Close all FX chain windows
+  
+     Cancel                   GoZone Home
+  ChannelLeft              TrackBank "-1"
+  ChannelRight             TrackBank "1"
+  BankLeft                 TrackBank "-8"
+  BankRight                TrackBank "8"
+
+
+  // Rewind                  Rewind
+  // FastForward              FastForward
+  FastForward Reaper 41042 // Move edit cursor forward one measure
+  FastForward Reaper 41042 // Move edit cursor forward one measure
+  FastForward Reaper 41042 // Move edit cursor forward one measure
+  FastForward Reaper 41042 // Move edit cursor forward one measure
+  Rewind Reaper 41043 // Move edit cursor back one measure
+  Rewind Reaper 41043 // Move edit cursor back one measure
+  Rewind Reaper 41043 // Move edit cursor back one measure
+  Rewind Reaper 41043 // Move edit cursor back one measure
+  Shift+Rewind             Reaper    40042                         //go to start of project
+  Shift+FastForward        Reaper    40043                         //go to end of project
+  / Stop                     Stop
+  Stop Reaper 40668 // Transport: Stop (DELETE all recorded media)
+  Play                     Play
+  Footswitch2              Play      
+  Record                   Record
+  Footswitch1              Record
+  
+  Flip                     Reaper _S&M_TOGLFXCHAIN                 // Toggle Show FX Chain
+  F1                       Reaper 40078                            // Toggle Mixer
+  F2                       Reaper 40906                            // Toggle Track Manager
+  F3                       Reaper 40271                            // Toggle FX Browser
+  F4                       Reaper 40716                            // Toggle MIDI Editor
+  F5                       Reaper _S&M_TOGLFXCHAIN                 // Toggle Show FX Chain
+  F6                       Reaper 40523                            // Transport: Decrease playrate by ~6% (one semitone)
+  F7                       Reaper 40521                            // Transport: Set playrate to 1.0
+  / F6                       Reaper 40846                            // Show FX Chain for master track
+  F8                       Reaper 1134                             // Transport: Tap tempo
+  Shift+F1                 GoZone Home
+  Shift+F2                 GoZone FocusedFXParam                   // Assigns Fader1 to the last touch FX parameter (Shift+F1 or Cancel to turn off)
+  Shift+F5                 Reaper 41743                            // Control surface: Refresh all surfaces
+  Group                    Reaper 42023                            // Automation: Set track automation mode to latch preview
+
+  Shift+Read               GlobalAutoMode "1"
+  Shift+Write              GlobalAutoMode "3"
+  Shift+Trim               GlobalAutoMode "0"
+  Shift+Touch              GlobalAutoMode "2"
+  Shift+Latch              GlobalAutoMode "4"
+  Shift+Group              Reaper         42024                    // Automation: Set all tracks automation mode to latch preview
+
+  Save                     Reaper         40026                    // Save project
+  Shift+Save               Reaper         40022                    // Save as
+
+  Undo                     Reaper         40029                    // Undo
+  Shift+Undo               Reaper         40030                    // Redo
+
+  Marker                   Reaper         40157                    // Insert Marker at current position                   
+  Shift+Marker             Reaper         40172                    // Go to Previous Marker/project start
+  Option+Marker            Reaper         40173                    // Go to Next Marker/project end
+
+  Nudge                    Reaper "_ZENAKIOS_NUDGEITEMVOLUP"       // Nudge item volume up 1db
+  Shift+Nudge              Reaper "_XENAKIOS_NUDGEITEMVOLDOWN"     // Nudge item volume up 1db
+  Cycle                    CycleTimeline
+  Click                    Reaper         40364
+  Shift+Click              Reaper         40363                    // Show metronome settings
+  Solo                     ClearAllSolo
+  Shift+Solo               Reaper         40745                    // Toggle solo in front
+  / Replace                  Reaper         1157                     // Toggle Snapping
+  Replace                  NoAction
+  Shift+Replace            Reaper         40145                    // Toggle Grid
+
+  / Up                       Reaper         40111                    // Zoom in vertical
+  / Down                     Reaper         40112                    // Zoom out vertical
+  / Up                       Reaper         _S&M_WNFOCUS6            // SWS/S&M: Focus next floating FX for selected tracks (cycle)
+  / Down                     Reaper         _S&M_WNFOCUS5            // SWS/S&M: Focus previous floating FX for selected tracks (cycle)
+  Up Reaper _RS7fba66bea4fead103ab9c958319feb53c6b0cfc4 // Script: amagalma_Float centered exclusively the previous FX for the current track.lua
+  Down Reaper _RS2182bf32a6716b0bc7db079f15ef087f231f69e9 // Script: amagalma_Float centered exclusively the next FX for the current track.lua
+  Right                    Reaper         1012                     // Zoom in horizontal
+  Left                     Reaper         1011                     // Zoom out horizontal   
+  Shift+Up                 Reaper         41325                    // View: Increase selected track heights
+  Shift+Down               Reaper         41326                    // View: Decrease selected track heights
+  Zoom                     Reaper         40113                    // Zoom selected track
+
+
+  / Zone JogWheel
+  JogWheelRotaryCW1                         Reaper                 "40647"         / MoveRightGridDivision
+  JogWheelRotaryCW2                         Reaper                 "40647"         / MoveRightGridDivision
+  JogWheelRotaryCW3                         Reaper                 "40647"         / MoveRightGridDivision
+  JogWheelRotaryCW4                         Reaper                 "40647"         / MoveRightGridDivision
+  JogWheelRotaryCW5                         Reaper                 "40647"         / MoveRightGridDivision
+  JogWheelRotaryCW6                         Reaper                 "40647"         / MoveRightGridDivision
+  JogWheelRotaryCW7                         Reaper                 "40647"         / MoveRightGridDivision
+
+  JogWheelRotaryCCW1                        Reaper                 "40646"         / MoveLeftGridDivision
+  JogWheelRotaryCCW2                         Reaper                 "40646"         / MoveLeftGridDivision
+  JogWheelRotaryCCW3                         Reaper                 "40646"         / MoveLeftGridDivision
+  JogWheelRotaryCCW4                         Reaper                 "40646"         / MoveLeftGridDivision
+  JogWheelRotaryCCW5                         Reaper                 "40646"         / MoveLeftGridDivision
+  JogWheelRotaryCCW6                         Reaper                 "40646"         / MoveLeftGridDivision
+  JogWheelRotaryCCW7                         Reaper                 "40646"         / MoveLeftGridDivision
+
+
+  IncludedZones
+    "SelectedChannel"
+    "Channel"
+    "MasterChannel"
+    "Send"
+    "FXMenu"
+  IncludedZonesEnd
+ZoneEnd
+
+
+
+
+/Zone "FocusedFXParam"           // Assigns first fader to the last focused FX parameter, Shift+F1 or Cancel to go back "Home"
+/     Fader1                     FocusedFXParam
+/     DisplayUpper1              FocusedFXParamNameDisplay
+/     DisplayLower1              FocusedFXParamValueDisplay
+/     Shift+F1                   GoZone Home
+/ZoneEnd
+
