@@ -73,7 +73,7 @@ Zone "Buttons"
   Option+Solo                 Reaper 40745 // Solo in front (dim solo)    
   Rewind                      Rewind   
   FastForward                 FastForward
-  Stop                        Stop
+  Stop                        Reaper 40668 // Transport: Stop (DELETE all recorded media)
   Hold+Stop                   Reaper 40042 // Go to start of project
   Play                        Play
   Record                      Record
