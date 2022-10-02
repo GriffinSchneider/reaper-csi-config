@@ -1,0 +1,16 @@
+Zone Home
+    OnInitialization PreventFocusedFXMapping
+    IncludedZones
+        "Buttons"
+        "Track"
+        "MasterTrack"
+    IncludedZonesEnd
+    AssociatedZones
+       "SelectedTrackSend"
+       "SelectedTrackReceive"
+       "SelectedTrackFXMenu"
+       "TrackSend"
+       "TrackReceive"
+       "TrackFXMenu"
+    AssociatedZonesEnd
+ZoneEnd

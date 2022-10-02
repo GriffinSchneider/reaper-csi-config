@@ -1,4 +1,0 @@
-Zone "MasterChannel"
-  MasterTrackNavigator
-  MasterFader              TrackVolume
-ZoneEnd

@@ -1,0 +1,49 @@
+Zone "VST: TDR VOS SlickEQ (Tokyo Dawn Labs)-2"
+
+Plugin			LeaveSubZone
+Pan				LeaveSubZone
+
+ChannelLeft     GoSubZone "VST: TDR VOS SlickEQ (Tokyo Dawn Labs)"  
+ChannelRight    GoSubZone "VST: TDR VOS SlickEQ (Tokyo Dawn Labs)"
+
+DisplayUpper1 FixedTextDisplay "ST/MS"
+DisplayLower1 FXParamValueDisplay 15  
+Rotary1 FXParam 15 [ (4,4,3,2,1) 0.0 0.20 0.40 0.60 0.80 1.0 ]
+RotaryPush1 FXParam 15 [ 0.0 0.20 0.40 0.60 0.80 1.0 ]  
+
+DisplayUpper2 FXParamNameDisplay 20 "Latncy"
+DisplayLower2 FXParamValueDisplay 20  
+Rotary2 FXParam 20 [ (4,4,3,2,1) 0.0 0.50 1.0 ]
+RotaryPush2 FXParam 20 [ 0.0 0.50 1.0 ]
+
+DisplayUpper3 FXParamNameDisplay 8 "Model"
+DisplayLower3 FXParamValueDisplay 8  
+Rotary3 FXParam 8 [ (0.001,0.005,0.025,0.05,0.1) ]
+RotaryPush3 FXParam 8 [ 0.0 0.33 0.67 1.0 ]
+
+DisplayUpper4 FXParamNameDisplay 9 "Sat"
+DisplayLower4 FXParamValueDisplay 9  
+Rotary4 FXParam 9 [ (0.001,0.005,0.025,0.05,0.1) ]
+RotaryPush4 FXParam 9 [ 0.0 1.0 ]
+
+DisplayUpper5 FXParamNameDisplay 12 "Drive"
+DisplayLower5 FXParamValueDisplay 12  
+Rotary5 FXParam 12 [ (0.001,0.005,0.025,0.05,0.1) ]
+RotaryPush5 NoAction  
+
+DisplayUpper6 FXParamNameDisplay 11 "Stage"
+DisplayLower6 FXParamValueDisplay 11  
+Rotary6 FXParam 11 [ (4,4,3,2,1) 0.0 0.25 0.50 0.75 1.0 ]
+RotaryPush6 FXParam 11 [ 0.0 0.25 0.50 0.75 1.0 ]
+
+DisplayUpper7 NoAction 
+DisplayLower7 NoAction 
+Rotary7 NoAction      
+RotaryPush7 NoAction   
+
+DisplayUpper8 NoAction 
+DisplayLower8 NoAction 
+Rotary8 NoAction       
+RotaryPush8 NoAction 
+
+ZoneEnd  

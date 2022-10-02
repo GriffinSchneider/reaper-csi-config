@@ -1,0 +1,42 @@
+Zone "VST: UAD Fairchild 660 (Universal Audio, Inc.)" "Fair660"
+	DisplayUpper1		FixedTextDisplay "HdRoom"
+ 	DisplayLower1		FXParamValueDisplay 9
+	Rotary1			FXParam 9 [ 0.0 0.17 0.33 0.50 0.67 0.83 1.0 ]
+
+	DisplayUpper2		FixedTextDisplay "Input"
+ 	DisplayLower2		FXParamValueDisplay 1
+	Rotary2 		FXParam 1 [ 0.0 0.05 0.11 0.16 0.21 0.26 0.32 0.37 0.42 0.47 0.53 0.58 0.63 0.68 0.74 0.79 0.84 0.89 0.95 1.0 ]
+
+	DisplayUpper3		FixedTextDisplay "Thresh" 
+ 	DisplayLower3		FXParamValueDisplay 2
+	Rotary3 		FXParam 2
+
+	DisplayUpper4		FixedTextDisplay "Ratio" 
+ 	DisplayLower4		FXParamValueDisplay 3
+	Rotary4 		FXParam 3 [ 0.0 0.20 0.40 0.60 0.80 1.0 ]
+
+	DisplayUpper5		FixedTextDisplay "Knee" 
+ 	DisplayLower5		FXParamValueDisplay 6
+	Rotary5			FXParam 6
+
+	DisplayUpper6		FixedTextDisplay "Output" 
+ 	DisplayLower6		FXParamValueDisplay 7
+	Rotary6 		FXParam 7
+
+	DisplayUpper7		FixedTextDisplay "Meter" 
+ 	DisplayLower7		FXParamValueDisplay 0
+	Rotary7			FXParam 0 [ 0.0 0.50 1.0 ]
+
+	DisplayUpper8		FixedTextDisplay "WetDry" 
+ 	DisplayLower8		FXParamValueDisplay 8
+	Rotary8	 		FXParam 8
+
+	Mute1			ToggleFXBypass
+	Mute2			ToggleFXBypass
+	Mute3			ToggleFXBypass
+	Mute4			ToggleFXBypass
+	Mute5			ToggleFXBypass
+	Mute6			ToggleFXBypass
+	Mute7			ToggleFXBypass
+	Mute8			ToggleFXBypass
+ZoneEnd

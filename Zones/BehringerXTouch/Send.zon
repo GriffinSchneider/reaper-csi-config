@@ -1,7 +1,0 @@
-Zone "Send"                     // Hit the send button to assign sends on the selected track to faders, and Cancel to go back "Home"
-  SendNavigator
-  DisplayUpper|               TrackSendNameDisplay
-  DisplayLower|               TrackSendVolumeDisplay
-  Mute|                       TrackSendMute
-  Fader|                      TrackSendVolume
-ZoneEnd 

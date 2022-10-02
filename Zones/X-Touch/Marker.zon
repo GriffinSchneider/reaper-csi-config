@@ -1,0 +1,14 @@
+Zone "Marker"
+    Up			Reaper 40613	// Delete marker near cursor
+    Property+Up		NoFeedback
+    Down    		Reaper 40157	// Insert marker at current or edit position
+    Property+Down	NoFeedback
+    JogWheelRotaryCW	Reaper 40173	// Go to next marker or project end
+    Right		Reaper 40173	// Go to next marker or project end
+    Property+Right	NoFeedback
+    JogWheelRotaryCCW	Reaper 40172	// Go to previous marker or project start
+    Left      		Reaper 40172	// Go to previous marker or project start
+    Property+Left	NoFeedback
+    Zoom 		NoAction
+    Marker		LeaveSubZone
+ZoneEnd

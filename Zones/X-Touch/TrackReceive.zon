@@ -1,0 +1,13 @@
+Zone "TrackReceive"
+	DisplayLower| 		    TrackReceiveNameDisplay
+    	Fader|Touch+DisplayLower|   TrackReceiveVolumeDisplay
+    	Mute|                       TrackReceiveMute
+    	Rotary|                     TrackReceivePan
+    	Fader|                      TrackReceiveVolume
+    	Up		            TrackReceiveBank -1
+    	Down   			    TrackReceiveBank 1
+
+        RecordArm|                  NoAction
+        Solo|                       NoAction
+        Select|                     NoAction
+ZoneEnd

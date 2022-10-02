@@ -1,42 +1,3 @@
-// ------------------------------------------------------------
-// Behringer X-Touch
-// by Michael Bodenbach
-// 26.03.2020
-// ------------------------------------------------------------
-// Version 0.1
-// Version 0.2 / 10.04.2020
-// Version 1.0
-// ------------------------------------------------------------
-// History:
-//06.12.2020    Fixed Rotary widgets for MCUTrackPan
-//20.11.2020    Updated for CSI 1.0 with release messages by Funkybot
-//26.03.2020	Jogwheel definition changed
-//				Footswitch 1+ 2 added
-//				Expression pedal added
-//				Pan Encoder changed to EncoderPlain
-// 27.03.2010	Rotary back to normal Encoder
-// 28.02.2020	Add LED functionality to F1-F8 buttons 
-//				Add LED (FB_) handling at some widgets
-// 30.03.2020	Jogwheel definition changed
-// 10.04.2020	Add LED describtion
-//				Add widgets for ZoomLedOn/Off
-// ------------------------------------------------------------
-// Todo:
-//				...
-// ------------------------------------------------------------
-
-
-// ------------------------------------------------------------
-// X-Touch LEDs:
-// Value: 0 			= off
-// Value: 1 			= flashing
-// Value: 2-127 (ff)	= on
-// ------------------------------------------------------------
-
-
-// ------------------------------------------------------------
-// Encoder assign section
-// ------------------------------------------------------------
 Widget Track
 	Press 90 28 7f 90 28 00
 	FB_TwoState 90 28 7f 90 28 00
@@ -48,7 +9,7 @@ Widget Send
 WidgetEnd
 
 Widget Pan
-	Press 90 2a 7f 90 2a 00
+	Press 90 2a 7f  90 2a 00
 	FB_TwoState 90 2a 7f 90 2a 00
 WidgetEnd
 
@@ -59,7 +20,7 @@ WidgetEnd
 
 Widget EQ
 	Press 90 2c 7f 90 2c 00
-	FB_TwoState 90 2c 01 90 2c 00
+	FB_TwoState 90 2c 7f 90 2c 00
 WidgetEnd
 
 Widget Instrument
@@ -67,25 +28,24 @@ Widget Instrument
 	FB_TwoState 90 2d 7f 90 2d 00
 WidgetEnd
 
-
-
-// ------------------------------------------------------------
-// 
-// ------------------------------------------------------------
 Widget BankLeft
-	Press 90 2E 7f 90 2e 00
+	Press 90 2e 7f 90 2e 00
+	FB_TwoState 90 2e 7f 90 2e 00
 WidgetEnd
 
 Widget BankRight
-	Press 90 2F 7f 90 2f 00
+	Press 90 2f 7f 90 2f 00
+	FB_TwoState 90 2f 7f 90 2f 00
 WidgetEnd
 
 Widget ChannelLeft
 	Press 90 30 7f 90 30 00
+	FB_TwoState 90 30 7f 90 30 00
 WidgetEnd
 
 Widget ChannelRight
 	Press 90 31 7f 90 31 00
+	FB_TwoState 90 31 7f 90 31 00
 WidgetEnd
 
 Widget Flip
@@ -93,14 +53,6 @@ Widget Flip
 	FB_TwoState 90 32 7f 90 32 00
 WidgetEnd
 
-Widget MasterFader
-	Fader14Bit e8 7f 7f
-	FB_Fader14Bit e8 7f 7f
-WidgetEnd
-
-// ------------------------------------------------------------
-// 
-// ------------------------------------------------------------
 Widget GlobalView
 	Press 90 33 7f 90 33 00
 	FB_TwoState 90 33 7f 90 33 00
@@ -118,89 +70,90 @@ Widget TimeDisplay
 	FB_MCUTimeDisplay
 WidgetEnd
 
-Widget MidiTracks
-	Press 90 3E 7f 90 3e 00
+Widget AssignmentDisplay
+	FB_MCUAssignmentDisplay
 WidgetEnd
 
-Widget Inputs
-	Press 90 3F 7f 90 3f 00
-WidgetEnd
-
-Widget AudioTracks
-	Press 90 40 7f 90 40 00
-WidgetEnd
-
-Widget AudioInstrument
-	Press 90 41 7f 90 41 00
-WidgetEnd
-
-Widget Aux
-	Press 90 42 7f 90 42 00
-WidgetEnd
-
-Widget Busses
-	Press 90 43 7f 90 43 00
-WidgetEnd
-
-Widget Outputs
-	Press 90 44 7f 90 44 00
-WidgetEnd
-
-Widget User
-	Press 90 45 7f 90 45 00
-WidgetEnd
-
-
-// ------------------------------------------------------------
-// Function buttons section
-// ------------------------------------------------------------
 Widget F1
-	Press 90 36 7f
+	Press 90 36 7f 90 36 00
 	FB_TwoState 90 36 7f 90 36 00
 WidgetEnd
 
 Widget F2
-	Press 90 37 7f
+	Press 90 37 7f 90 37 00
 	FB_TwoState 90 37 7f 90 37 00
 WidgetEnd
 
 Widget F3
-	Press 90 38 7f
+	Press 90 38 7f 90 38 00
 	FB_TwoState 90 38 7f 90 38 00
 WidgetEnd
 
 Widget F4
-	Press 90 39 7f
+	Press 90 39 7f 90 39 00
 	FB_TwoState 90 39 7f 90 39 00
 WidgetEnd
 
 Widget F5
-	Press 90 3a 7f
+	Press 90 3a 7f 90 3a 00
 	FB_TwoState 90 3a 7f 90 3a 00
 WidgetEnd
 
 Widget F6
-	Press 90 3b 7f
+	Press 90 3b 7f 90 3b 00
 	FB_TwoState 90 3b 7f 90 3b 00
 WidgetEnd
 
 Widget F7
-	Press 90 3c 7f
+	Press 90 3c 7f 90 3c 00
 	FB_TwoState 90 3c 7f 90 3c 00
 WidgetEnd
 
 Widget F8
-	Press 90 3d 7f
+	Press 90 3d 7f 90 3d 00
 	FB_TwoState 90 3d 7f 90 3d 00
 WidgetEnd
 
-// ------------------------------------------------------------
-// Modify section
-// ------------------------------------------------------------
-// A quick press of that button will enter a latching 
-// mode where the modifier will remain active until 
-// pressed again.
-// ------------------------------------------------------------
+Widget MidiTracks
+	Press 90 3E 7f 90 3E 00
+	FB_TwoState 90 3E 7f 90 3E 00
+WidgetEnd
+
+Widget Inputs
+	Press 90 3F 7f 90 3F 00
+	FB_TwoState 90 3F 7f 90 3F 00
+WidgetEnd
+
+Widget AudioTracks
+	Press 90 40 7f 90 40 00
+	FB_TwoState 90 40 7f 90 40 00
+WidgetEnd
+
+Widget AudioInstrument
+	Press 90 41 7f 90 41 00
+	FB_TwoState 90 41 7f 90 41 00
+WidgetEnd
+
+Widget Aux
+	Press 90 42 7f 90 42 00
+	FB_TwoState 90 42 7f 90 42 00
+WidgetEnd
+
+Widget Busses
+	Press 90 43 7f 90 43 00
+	FB_TwoState 90 43 7f 90 43 00
+WidgetEnd
+
+Widget Outputs
+	Press 90 44 7f 90 44 00
+	FB_TwoState 90 44 7f 90 44 00
+WidgetEnd
+
+Widget User
+	Press 90 45 7f 90 45 00
+	FB_TwoState 90 45 7f 90 45 00
+WidgetEnd
+
 Widget Shift
 	Press 90 46 7f 90 46 00
 	FB_TwoState 90 46 7f 90 46 00
@@ -221,9 +174,6 @@ Widget Alt
 	FB_TwoState 90 49 7f 90 49 00
 WidgetEnd
 
-// ------------------------------------------------------------
-// Automation section
-// ------------------------------------------------------------
 Widget Read
 	Press 90 4a 7f 90 4a 00
 	FB_TwoState 90 4a 7f 90 4a 00
@@ -254,28 +204,26 @@ Widget Group
 	FB_TwoState 90 4f 7f 90 4f 00
 WidgetEnd
 
-// ------------------------------------------------------------
-// Utility section
-// ------------------------------------------------------------
 Widget Save
 	Press 90 50 7f 90 50 00
+	FB_TwoState 90 50 7f 90 50 00
 WidgetEnd
 
 Widget Undo
 	Press 90 51 7f 90 51 00
+	FB_TwoState 90 51 7f 90 51 00
 WidgetEnd
 
 Widget Cancel
 	Press 90 52 7f 90 52 00
+	FB_TwoState 90 52 7f 90 52 00
 WidgetEnd
 
 Widget Enter
 	Press 90 53 7f 90 53 00
+	FB_TwoState 90 53 7f 90 53 00
 WidgetEnd
 
-// ------------------------------------------------------------
-// Transport section
-// ------------------------------------------------------------
 Widget Marker
 	Press 90 54 7f 90 54 00
 	FB_TwoState 90 54 7f 90 54 00
@@ -313,14 +261,12 @@ WidgetEnd
 
 Widget Rewind
 	Press 90 5b 7f 90 5b 00
-	// normal: FB_TwoState 90 5b 7f 90 5b 00
-	FB_TwoState 90 5b 7f 90 5b 7f
+	FB_TwoState 90 5b 7f 90 5b 00
 WidgetEnd
 
 Widget FastForward
 	Press 90 5c 7f 90 5c 00
-	// normal: FB_TwoState 90 5c 7f 90 5c 00
-	FB_TwoState 90 5c 7f 90 5c 7f
+	FB_TwoState 90 5c 7f 90 5c 00
 WidgetEnd
 
 Widget Stop
@@ -338,10 +284,6 @@ Widget Record
 	FB_TwoState 90 5f 7f 90 5f 00
 WidgetEnd
 
-
-// ------------------------------------------------------------
-// 
-// ------------------------------------------------------------
 Widget Up
 	Press 90 60 7f 90 60 00
 	FB_TwoState 90 60 7f 90 60 00
@@ -367,122 +309,29 @@ Widget Zoom
 	FB_TwoState 90 64 7f 90 64 00
 WidgetEnd
 
-Widget ZoomLedOn
-	FB_TwoState 90 64 7f 90 64 00
-WidgetEnd
-
-Widget ZoomLedOff
-	FB_TwoState 90 64 00 90 64 00
-WidgetEnd
-
-
 Widget Scrub
-	Press 90 65 7f
+	Press 90 65 7f 90 65 00
 	FB_TwoState 90 65 7f 90 65 00
 WidgetEnd
 
-
-
-// The standard rotary won't work for the Jogwheel. Thats why it is defined as two buttons
-//Widget JogWheelRotary
-//	Encoder b0 3c 7f
-//	FB_Encoder b0 3c 7f
-//WidgetEnd
-
-Widget JogWheelRotaryCW1
+Widget JogWheelRotaryCW
 	Press b0 3c 01
 WidgetEnd
 
-Widget JogWheelRotaryCW2
-	Press b0 3c 02
-WidgetEnd
-
-Widget JogWheelRotaryCW3
-	Press b0 3c 03
-WidgetEnd
-
-Widget JogWheelRotaryCW4
-	Press b0 3c 04
-WidgetEnd
-
-Widget JogWheelRotaryCW5
-	Press b0 3c 05
-WidgetEnd
-
-Widget JogWheelRotaryCW6
-	Press b0 3c 06
-WidgetEnd
-
-Widget JogWheelRotaryCW7
-	Press b0 3c 07
-WidgetEnd
-
-Widget JogWheelRotaryCCW1
+Widget JogWheelRotaryCCW
 	Press b0 3c 41
 WidgetEnd
 
-Widget JogWheelRotaryCCW2
-	Press b0 3c 42
+Widget Footswitch1
+  Press 90 66 7F 90 66 00
 WidgetEnd
 
-Widget JogWheelRotaryCCW3
-	Press b0 3c 43
-WidgetEnd
-
-Widget JogWheelRotaryCC4
-	Press b0 3c 44
-WidgetEnd
-
-Widget JogWheelRotaryCCW5
-	Press b0 3c 45
-WidgetEnd
-
-Widget JogWheelRotaryCCW6
-	Press b0 3c 46
-WidgetEnd
-
-Widget JogWheelRotaryCCW7
-	Press b0 3c 47
-WidgetEnd
-
-
-// ------------------------------------------------------------
-// Fader
-// ------------------------------------------------------------
-Widget VUMeter1
-	FB_MCUVUMeter 0
-WidgetEnd
-
-Widget VUMeter2
-	FB_MCUVUMeter 1
-WidgetEnd
-
-Widget VUMeter3
-	FB_MCUVUMeter 2
-WidgetEnd
-
-Widget VUMeter4
-	FB_MCUVUMeter 3
-WidgetEnd
-
-Widget VUMeter5
-	FB_MCUVUMeter 4
-WidgetEnd
-
-Widget VUMeter6
-	FB_MCUVUMeter 5
-WidgetEnd
-
-Widget VUMeter7
-	FB_MCUVUMeter 6
-WidgetEnd
-
-Widget VUMeter8
-	FB_MCUVUMeter 7
+Widget Footswitch2
+  Press 90 67 7F 90 67 00
 WidgetEnd
 
 Widget DisplayUpper1
-	FB_MCUDisplayUpper 0
+	FB_XTouchDisplayUpper 0
 WidgetEnd
 
 Widget DisplayUpper2
@@ -593,6 +442,12 @@ Widget Fader8
 	Touch 90 6f 7f 90 6f 00
 WidgetEnd
 
+Widget MasterFader
+	Fader14Bit e8 7f 7f
+	FB_Fader14Bit e8 7f 7f
+	Touch 90 70 7f 90 70 00
+WidgetEnd
+
 Widget RotaryPush1
 	Press 90 20 7f 90 20 00
 WidgetEnd
@@ -602,7 +457,7 @@ Widget RotaryPush2
 WidgetEnd
 
 Widget RotaryPush3
-	Press 90 22 7f 90 22 00
+	Press 90 22 7f 90 22 00 
 WidgetEnd
 
 Widget RotaryPush4
@@ -626,51 +481,43 @@ Widget RotaryPush8
 WidgetEnd
 
 Widget Rotary1
-	Encoder b0 10 7f [ < 41-48 > 01-08 ]
+	Encoder b0 10 7f [ < 41-47 > 01-07 ]
 	FB_Encoder b0 10 7f
-	/ Toggle 90 20 7f
 WidgetEnd
 
 Widget Rotary2
-	Encoder b0 11 7f [ < 41-4a > 01-09 ]
+	Encoder b0 11 7f [ < 41-47 > 01-07 ]
 	FB_Encoder b0 11 7f
-	/ Toggle 90 21 7f
 WidgetEnd
 
 Widget Rotary3
-	Encoder b0 12 7f [ < 41-4a > 01-09 ]
+	Encoder b0 12 7f [ < 41-47 > 01-07 ]
 	FB_Encoder b0 12 7f
-	/ Toggle 90 22 7f
 WidgetEnd
 
 Widget Rotary4
-	Encoder b0 13 7f [ < 41-4a > 01-09 ]
+	Encoder b0 13 7f [ < 41-47 > 01-07 ]
 	FB_Encoder b0 13 7f
-	/ Toggle 90 23 7f
 WidgetEnd
 
 Widget Rotary5
-	Encoder b0 14 7f [ < 41-4a > 01-09 ]
+	Encoder b0 14 7f [ < 41-47 > 01-07 ]
 	FB_Encoder b0 14 7f
-	/ Toggle 90 24 7f
 WidgetEnd
 
 Widget Rotary6
-	Encoder b0 15 7f [ < 41-4a > 01-09 ]
+	Encoder b0 15 7f [ < 41-47 > 01-07 ]
 	FB_Encoder b0 15 7f
-	/ Toggle 90 25 7f
 WidgetEnd
 
 Widget Rotary7
-	Encoder b0 16 7f [ < 41-4a > 01-09 ]
+	Encoder b0 16 7f [ < 41-47 > 01-07 ]
 	FB_Encoder b0 16 7f
-	/ Toggle 90 26 7f
 WidgetEnd
 
 Widget Rotary8
-	Encoder b0 17 7f [ < 41-4a > 01-09 ]
+	Encoder b0 17 7f [ < 41-47 > 01-07 ]
 	FB_Encoder b0 17 7f
-	/ Toggle 90 27 7f
 WidgetEnd
 
 Widget RecordArm1
@@ -794,7 +641,7 @@ Widget Mute8
 WidgetEnd
 
 Widget Select1
-	Press 90 18 7f
+	Press 90 18 7f 90 18 00
 	FB_TwoState 90 18 7f 90 18 00
 WidgetEnd
 
@@ -833,20 +680,34 @@ Widget Select8
 	FB_TwoState 90 1f 7f 90 1f 00
 WidgetEnd
 
-// ------------------------------------------------------------
-// Footswitch / pedal section
-// ------------------------------------------------------------
-Widget Footswitch1 
-  Press 90 66 7F 
-  FB_TwoState 90 66 7f 90 66 00
+Widget VUMeter1
+	FB_MCUVUMeter 0
 WidgetEnd
 
-Widget Footswitch2
-  Press 90 67 7F 
-  FB_TwoState 90 66 7f 90 66 00
+Widget VUMeter2
+	FB_MCUVUMeter 1
 WidgetEnd
 
-Widget ExpressionPedal 
-  Fader7Bit b0 2e 7f 
-  FB_Fader7Bit b0 00 00
+Widget VUMeter3
+	FB_MCUVUMeter 2
+WidgetEnd
+
+Widget VUMeter4
+	FB_MCUVUMeter 3
+WidgetEnd
+
+Widget VUMeter5
+	FB_MCUVUMeter 4
+WidgetEnd
+
+Widget VUMeter6
+	FB_MCUVUMeter 5
+WidgetEnd
+
+Widget VUMeter7
+	FB_MCUVUMeter 6
+WidgetEnd
+
+Widget VUMeter8
+	FB_MCUVUMeter 7
 WidgetEnd

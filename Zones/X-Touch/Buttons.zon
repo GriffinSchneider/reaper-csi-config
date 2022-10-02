@@ -1,0 +1,88 @@
+Zone "Buttons"
+    SubZones
+ 	"Marker"
+    SubZonesEnd
+    Track                       Reaper 1156	// Toggle item grouping override
+    Pan                         Reaper 1155	// Cycle ripple editing mode
+    EQ                          Reaper 40070	// Move envelope points with media items
+    Send                        Reaper 40145 	// Toggle Grid Lines
+    Hold+Send                   Reaper 40071	// Show snap/grid settings
+    Plugin                      Reaper 1157	// Toggle snapping
+    Hold+Plugin			Reaper 40071	// Show snap/grid settings
+    Instrument                  Reaper 1135	// Toggle locking
+    Hold+Instrument		Reaper 40277	// Show lock settings
+    BankLeft                    TrackBank -8
+    BankRight                   TrackBank 8
+    ChannelLeft                 TrackBank -1
+    ChannelRight                TrackBank 1
+    Flip                        Flip
+    GlobalView                  GoHome
+    GlobalView                  Reaper _S&M_WNCLS3        	// Close all floating FX windows
+    GlobalView                  Reaper _S&M_WNCLS4        	// Close all FX chain windows
+    GlobalView                  Reaper _S&M_TOGLFXCHAIN   	// Toggle FX Chain for selected tracks
+    nameValue			CycleTrackVCAFolderModes
+    AssignmentDisplay		TrackVCAFolderModeDisplay
+    smpteBeats                  CycleTimeDisplayModes
+    TimeDisplay                 MCUTimeDisplay
+    F1                          NoAction
+    F2                          NoAction
+    F3                          NoAction
+    F4                          NoAction
+    F5                          NoAction
+    F6                          NoAction
+    F7                          NoAction
+    F8                          NoAction
+    MidiTracks                  GoSelectedTrackSend
+    Inputs                      GoSelectedTrackReceive
+    AudioTracks                 GoSelectedTrackFXMenu
+    AudioInstrument             GoTrackSend
+    Aux                         GoTrackReceive
+    Busses                      GoTrackFXMenu
+    Outputs                     ToggleEnableFocusedFXMapping 
+    User                        ToggleEnableFocusedFXParamMapping
+    Shift                       Shift
+    Option                      Option
+    Control                     Control
+    Alt                         Alt     
+    Read                        TrackAutoMode 1
+    Write                       TrackAutoMode 3
+    Trim                        TrackAutoMode 0
+    Touch                       TrackAutoMode 2
+    Latch                       TrackAutoMode 4
+    Group                       TrackAutoMode 5
+    Shift+Read                  GlobalAutoMode 1
+    Shift+Write                 GlobalAutoMode 3
+    Shift+Trim                  GlobalAutoMode 0
+    Shift+Touch                 GlobalAutoMode 2
+    Shift+Latch                 GlobalAutoMode 4  
+    Shift+Group                 GlobalAutoMode 5   
+    Save                        SaveProject
+    Undo                        Undo
+    Shift+Undo                  Redo
+    Cancel                      NoAction
+    Enter                       NoAction
+    Marker                      GoSubZone "Marker"
+    Nudge                       NoAction 
+    Cycle                       CycleTimeline
+    Drop                        NoAction
+    Replace                     NoAction
+    Click                       Reaper 40364  			// Toggle metronome
+    Shift+Click   		Reaper _SWS_AWCOUNTRECTOG    	// Toggle count-in before recording
+    Hold+Click                  Reaper 40363  			// Show metronome settings
+    Solo                        ClearAllSolo
+    Option+Solo    		Reaper 40745              	// Solo in front (dim solo)    
+    Rewind                      Rewind   
+    FastForward                 FastForward
+    Stop                        Stop
+    Hold+Stop			Reaper 40042			// Go to start of project
+    Play                        Play
+    Record                      Record
+    JogWheelRotaryCW            NoAction
+    JogWheelRotaryCCW           NoAction
+    Scrub                       NoAction
+    Left                        NoAction     
+    Right                       NoAction
+    Up                          NoAction
+    Down                        NoAction
+    Zoom                        NoAction
+ZoneEnd

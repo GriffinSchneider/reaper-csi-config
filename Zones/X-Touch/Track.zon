@@ -1,0 +1,17 @@
+Zone "Track"
+    DisplayUpper|            	TrackNameDisplay
+    Fader|Touch+DisplayLower| 	TrackVolumeDisplay
+    DisplayLower|      		MCUTrackPanDisplay
+    VUMeter|			TrackOutputMeterMaxPeakLR
+    Fader|                   	TrackVolume 
+    Flip+Fader|                	TrackPan 
+    Rotary|                     MCUTrackPan
+    RotaryPush|                 ToggleMCUTrackPanWidth
+    RecordArm|                  TrackRecordArm
+    Solo|                       TrackSolo
+    Mute|                       TrackMute
+    Select|                     TrackUniqueSelect
+    Select|                     TrackToggleVCASpill
+    Shift+Select|               TrackRangeSelect
+    Control+Select|             TrackSelect
+ZoneEnd
