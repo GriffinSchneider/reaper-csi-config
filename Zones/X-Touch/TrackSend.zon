@@ -1,13 +1,13 @@
 Zone "TrackSend"
-	DisplayLower| 		    TrackSendNameDisplay
-    	Fader|Touch+DisplayLower|   TrackSendVolumeDisplay
-    	Mute|                       TrackSendMute
-    	Rotary|                     TrackSendPan
-    	Fader|                      TrackSendVolume
-    	Up                          TrackSendBank -1
-    	Down                        TrackSendBank 1
+  DisplayLower|               TrackSendNameDisplay
+  Fader|Touch+DisplayLower|   TrackSendVolumeDisplay
+  Mute|                       TrackSendMute
+  Rotary|                     TrackSendPan
+  Fader|                      TrackSendVolume
+  Up                          TrackSendBank -1
+  Down                        TrackSendBank 1
 
-        RecordArm|                  NoAction
-        Solo|                       NoAction
-        Select|                     NoAction
+  RecordArm|                  NoAction
+  Solo|                       NoAction
+  Select|                     NoAction
 ZoneEnd

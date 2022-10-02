@@ -1,15 +1,15 @@
 Zone "TrackFXMenu"
-        DisplayLower|       	FXMenuNameDisplay
-        Rotary|             	NoAction
-        RotaryPush|         	GoFXSlot
-	Mute| 			ToggleFXBypass
-        Left            	SelectedTrackFXMenuBank -1
-        Right           	SelectedTrackFXMenuBank 1
-        Up	            	TrackFXMenuBank -1
-        Down	           	TrackFXMenuBank 1
+  DisplayLower|               FXMenuNameDisplay
+  Rotary|                     NoAction
+  RotaryPush|                 GoFXSlot
+  ToggleFXBypass
+  Left                        SelectedTrackFXMenuBank -1
+  Right                       SelectedTrackFXMenuBank 1
+  Up                          TrackFXMenuBank -1
+  Down                        TrackFXMenuBank 1
 
-        RecordArm|              NoAction
-        Solo|                   NoAction
-        Select|                 NoAction
-	Fader|			NoAction    
-ZoneEnd
+  RecordArm|                  NoAction
+  Solo|                       NoAction
+  Select|                     NoAction
+  Fader|                      NoAction    
+oneEnd

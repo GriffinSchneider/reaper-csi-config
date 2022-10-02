@@ -1,15 +1,15 @@
 Zone "SelectedTrackReceive"
-    DisplayUpper|               TrackReceiveNameDisplay
-    DisplayLower| 		TrackReceivePrePostDisplay
-    Fader|Touch+DisplayLower|   TrackReceiveVolumeDisplay
-    RotaryPush|			TrackReceivePrePost
-    Mute|			TrackReceiveMute
-    Rotary|                     TrackReceivePan
-    Fader|                      TrackReceiveVolume
-    Left			SelectedTrackReceiveBank -1
-    Right   			SelectedTrackReceiveBank 1
+  DisplayUpper|               TrackReceiveNameDisplay
+  DisplayLower|               TrackReceivePrePostDisplay
+  Fader|Touch+DisplayLower|   TrackReceiveVolumeDisplay
+  RotaryPush|                 TrackReceivePrePost
+  Mute|                       TrackReceiveMute
+  Rotary|                     TrackReceivePan
+  Fader|                      TrackReceiveVolume
+  Left                        SelectedTrackReceiveBank -1
+  Right                       SelectedTrackReceiveBank 1
 
-    RecordArm|                  NoAction
-    Solo|                       NoAction
-    Select|                     NoAction
+  RecordArm|                  NoAction
+  Solo|                       NoAction
+  Select|                     NoAction
 ZoneEnd

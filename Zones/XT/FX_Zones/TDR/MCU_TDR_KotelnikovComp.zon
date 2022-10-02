@@ -1,46 +1,44 @@
 Zone "VST: TDR Kotelnikov (Tokyo Dawn Labs)" "Kotel"
+  Plugin      LeaveSubZone
+  Pan       LeaveSubZone
 
-Plugin			LeaveSubZone
-Pan				LeaveSubZone
+  DisplayUpper1   FXParamNameDisplay 0 "Thresh"
+  DisplayLower1   FXParamValueDisplay 0
+  Rotary1     FXParam 0 [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]
+  RotaryPush1   NoAction
 
-DisplayUpper1 	FXParamNameDisplay 0 "Thresh"
-DisplayLower1 	FXParamValueDisplay 0   
-Rotary1 		FXParam 0 [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]  
-RotaryPush1 	NoAction
-   
-DisplayUpper2 	FXParamNameDisplay 3 "Ratio"
-DisplayLower2 	FXParamValueDisplay 3  
-Rotary2 		FXParam 3 [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]   
-RotaryPush2 	NoAction
-   
-DisplayUpper3 	FXParamNameDisplay 4 "Att"
-DisplayLower3 	FXParamValueDisplay 4  
-Rotary3 		FXParam 4  [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]    
-RotaryPush3 	NoAction
-   
-DisplayUpper4 	FXParamNameDisplay 5 "RelPk"
-DisplayLower4 	FXParamValueDisplay 5  
-Rotary4 		FXParam 5  [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]  
-RotaryPush4 	NoAction  
-   
-DisplayUpper5 	FXParamNameDisplay 6 "RelRMS"
-DisplayLower5 	FXParamValueDisplay 6  
-Rotary5 		FXParam 6  [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]  
-RotaryPush5 	NoAction
-   
-DisplayUpper6 	FXParamNameDisplay 8 "DryMix"
-DisplayLower6 	FXParamValueDisplay 8  
-Rotary6 		FXParam 8 [ [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]  
-RotaryPush6 	FXParam 10 [ 1.0 ]
-   
-DisplayUpper7 	FXParamNameDisplay 7 "MakeUp"
-DisplayLower7 	FXParamValueDisplay 7  
-Rotary7 		FXParam 7  [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]  
-RotaryPush7 	NoAction
-   
-DisplayUpper8 	FXParamNameDisplay 11 "Output"
-DisplayLower8 	FXParamValueDisplay 11  
-Rotary8 		FXParam 11 [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]
-RotaryPush8 	FXParam 17 [ 0.0 1.0 ]
+  DisplayUpper2   FXParamNameDisplay 3 "Ratio"
+  DisplayLower2   FXParamValueDisplay 3
+  Rotary2     FXParam 3 [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]
+  RotaryPush2   NoAction
 
+  DisplayUpper3   FXParamNameDisplay 4 "Att"
+  DisplayLower3   FXParamValueDisplay 4
+  Rotary3     FXParam 4  [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]
+  RotaryPush3   NoAction
+
+  DisplayUpper4   FXParamNameDisplay 5 "RelPk"
+  DisplayLower4   FXParamValueDisplay 5
+  Rotary4     FXParam 5  [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]
+  RotaryPush4   NoAction
+
+  DisplayUpper5   FXParamNameDisplay 6 "RelRMS"
+  DisplayLower5   FXParamValueDisplay 6
+  Rotary5     FXParam 6  [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]
+  RotaryPush5   NoAction
+
+  DisplayUpper6   FXParamNameDisplay 8 "DryMix"
+  DisplayLower6   FXParamValueDisplay 8
+  Rotary6     FXParam 8 [ [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]
+  RotaryPush6   FXParam 10 [ 1.0 ]
+
+  DisplayUpper7   FXParamNameDisplay 7 "MakeUp"
+  DisplayLower7   FXParamValueDisplay 7
+  Rotary7     FXParam 7  [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]
+  RotaryPush7   NoAction
+
+  DisplayUpper8   FXParamNameDisplay 11 "Output"
+  DisplayLower8   FXParamValueDisplay 11
+  Rotary8     FXParam 11 [ (0.0025,0.003,0.004,0.006,0.008,0.01,0.015,0.02,0.025,0.03,0.06,0.08,0.1,0.2,0.4,0.6) ]
+  RotaryPush8   FXParam 17 [ 0.0 1.0 ]
 ZoneEnd
