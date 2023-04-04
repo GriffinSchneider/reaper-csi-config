@@ -11,34 +11,38 @@ Zone "Track"
   RecordArm|                   TrackRecordArm
   Solo|                        TrackSolo
   Mute|                        TrackMute
-  Select|                      TrackUniqueSelect
-  Hold+Select|                 TrackUniqueSelect
+  Select|                      TrackSelect
+
+  Hold+Select|                 Reaper 40297 // Track: Unselect (clear selection of) all tracks
+  Hold+Select|                 TrackSelect
+  Hold+Select|                 Reaper 41665 // Mixer: Show/hide children of selected tracks
   Hold+Select|                 TrackToggleVCASpill
   Hold+Select|                 Reaper "_MM_FolderChildren"  
+  Hold+Select|                 TrackSelect
   Shift+Select|                TrackRangeSelect
   Control+Select|              TrackSelect
   Fader|                       TrackVolume
   VUMeter|                     TrackOutputMeter
 ZoneEnd
 
-Zone "Track"
-  DisplayUpper|               TrackNameDisplay
-  Fader|Touch+DisplayLower|   TrackVolumeDisplay
-  DisplayLower|               MCUTrackPanDisplay
-  VUMeter|                    TrackOutputMeterMaxPeakLR
-  Fader|                      TrackVolume 
-  Flip+Fader|                 TrackPan 
-  Rotary|                     MCUTrackPan
-  RotaryPush|                 ToggleMCUTrackPanWidth
-  RecordArm|                  TrackRecordArm
-  Solo|                       TrackSolo
-  Mute|                       TrackMute
-  Select|                     TrackSelect
-  Hold+Select|                Reaper 41665                            //Mixer: Mixer: Show/hide children of selected tracks
-  Hold+Select|                TrackToggleVCASpill
-  Hold+Select|                TrackSelect
-  / Select|                     TrackUniqueSelect
-  / Select|                     TrackToggleVCASpill
-  Shift+Select|               TrackRangeSelect
-  Control+Select|             TrackSelect
-ZoneEnd
+/ Zone "Track"
+/   DisplayUpper|               TrackNameDisplay
+/   Fader|Touch+DisplayLower|   TrackVolumeDisplay
+/   DisplayLower|               MCUTrackPanDisplay
+/   VUMeter|                    TrackOutputMeterMaxPeakLR
+/   Fader|                      TrackVolume 
+/   Flip+Fader|                 TrackPan 
+/   Rotary|                     MCUTrackPan
+/   RotaryPush|                 ToggleMCUTrackPanWidth
+/   RecordArm|                  TrackRecordArm
+/   Solo|                       TrackSolo
+/   Mute|                       TrackMute
+/   Select|                     TrackSelect
+/   Hold+Select|                Reaper 41665                            //Mixer: Mixer: Show/hide children of selected tracks
+/   Hold+Select|                TrackToggleVCASpill
+/   Hold+Select|                TrackSelect
+/   / Select|                     TrackUniqueSelect
+/   / Select|                     TrackToggleVCASpill
+/   Shift+Select|               TrackRangeSelect
+/   Control+Select|             TrackSelect
+/ ZoneEnd

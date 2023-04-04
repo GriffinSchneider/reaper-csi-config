@@ -16,22 +16,27 @@ Zone "Buttons"
   ChannelLeft                 TrackBank -1
   ChannelRight                TrackBank 1
   Flip                        Flip
-  GlobalView                  GoHome
-  GlobalView                  Reaper _S&M_WNCLS3          // Close all floating FX windows
+  / GlobalView                  GoHome
+  GlobalView                  Reaper ButtonLink href='/dataQuality' palette='_S&M_WNCLS3          // Close all floating FX windows
   GlobalView                  Reaper _S&M_WNCLS4          // Close all FX chain windows
   GlobalView                  Reaper _S&M_TOGLFXCHAIN     // Toggle FX Chain for selected tracks
+  GlobalView                  Reaper 40020 // Time selection: Remove (unselect) time selection and loop points
+  GlobalView                  Reaper 40289 // Item: Unselect (clear selection of) all items
+  
   nameValue                   CycleTrackVCAFolderModes
   AssignmentDisplay           TrackVCAFolderModeDisplay
   smpteBeats                  CycleTimeDisplayModes
   TimeDisplay                 MCUTimeDisplay
-  F1                          NoAction
-  F2                          NoAction
+
+  F1                          Reaper 41743 // Control surface: Refresh all surfaces
+  F2                          Reaper _RSc5caf482e842d97f0ee79b04bc2d28f498725823 // open_axe_edit.lua
   F3                          NoAction
   F4                          NoAction
   F5                          NoAction
   F6                          NoAction
   F7                          NoAction
-  F8                          NoAction
+  F8                          Reaper 1134 // Transport: Tap tempo
+
   MidiTracks                  GoSelectedTrackSend
   Inputs                      GoSelectedTrackReceive
   AudioTracks                 GoSelectedTrackFXMenu
@@ -71,18 +76,29 @@ Zone "Buttons"
   Hold+Click                  Reaper 40363 // Show metronome settings
   Solo                        ClearAllSolo
   Option+Solo                 Reaper 40745 // Solo in front (dim solo)    
-  Rewind                      Rewind   
-  FastForward                 FastForward
+
+  FastForward Reaper 41042 // Move edit cursor forward one measure
+  FastForward Reaper 41042 // Move edit cursor forward one measure
+  FastForward Reaper 41042 // Move edit cursor forward one measure
+  FastForward Reaper 41042 // Move edit cursor forward one measure
+  Rewind Reaper 41043 // Move edit cursor back one measure
+  Rewind Reaper 41043 // Move edit cursor back one measure
+  Rewind Reaper 41043 // Move edit cursor back one measure
+  Rewind Reaper 41043 // Move edit cursor back one measure
+
   Stop                        Reaper 40668 // Transport: Stop (DELETE all recorded media)
   Hold+Stop                   Reaper 40042 // Go to start of project
   Play                        Play
   Record                      Record
-  JogWheelRotaryCW            NoAction
-  JogWheelRotaryCCW           NoAction
+  JogWheelRotaryCW            Reaper 40647
+  JogWheelRotaryCCW           Reaper 40646
   Scrub                       NoAction
-  Left                        NoAction     
-  Right                       NoAction
+
+  Right                       Reaper 1012  // Zoom in horizontal
+  Left                        Reaper 1011  // Zoom out horizontal   
+  Shift+Up                    Reaper 41325 // View: Increase selected track heights
+  Shift+Down                  Reaper 41326 // View: Decrease selected track heights
   Up                          NoAction
   Down                        NoAction
-  Zoom                        NoAction
+  Zoom                        Reaper 40113 // Zoom selected track
 ZoneEnd

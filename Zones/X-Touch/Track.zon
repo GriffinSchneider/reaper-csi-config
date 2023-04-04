@@ -10,8 +10,9 @@ Zone "Track"
   RecordArm|                  TrackRecordArm
   Solo|                       TrackSolo
   Mute|                       TrackMute
-  Select|                     TrackUniqueSelect
-  Select|                     TrackToggleVCASpill
+  Select|                     TrackSelect
+  / Select|                     TrackToggleVCASpill
   Shift+Select|               TrackRangeSelect
   Control+Select|             TrackSelect
+  Hold+Select|                Reaper 41665 // Mixer: Show/hide children of selected tracks
 ZoneEnd
